@@ -1,10 +1,18 @@
+'use client'
+
+import Navbar from "@/components/utils/Navbar";
+
+
 
 
 export default function Home() {
   return (
     <>
     
-    Welcome to landing page of Automobile App
+    <div>
+      <Navbar/>
+    
+    </div>
     </>
   );
 }
