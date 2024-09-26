@@ -37,8 +37,10 @@ const Navbar = () => {
        />
        <FaSearch className='text-blue-700'/>
       </form>
+      <button className='bg-white  px-4 py-2 rounded-lg border:1'>Location</button>
       
       <ul className='flex gap-4 '>
+
         
 
       <SocialIcon network="whatsapp" />
