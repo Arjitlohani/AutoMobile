@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../utils/Navbar'
+import Footer from '../utils/Footer';
 
 const LoginForm = () => {
     const handleProfileCard = () => {
@@ -47,6 +48,8 @@ const LoginForm = () => {
 
     
 </div>
+<input type="text" id="toggle" className="w-full m-4 rounded-[15px] bg-white h-[40px]" placeholder='Enter your email Id'/>
+<Footer/>
 </div>
 
 
