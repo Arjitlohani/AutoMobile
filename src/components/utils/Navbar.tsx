@@ -30,7 +30,7 @@ const Navbar: React.FC<NavbarProps> = () => {
             </Link>
             <div className="hidden lg:flex flex-col">
               <p>Nepal Most Trusted</p>
-              <p>MoterPlace</p>
+              <p>MotorPlace</p>
             </div>
           </div>
 
@@ -56,7 +56,7 @@ const Navbar: React.FC<NavbarProps> = () => {
             <li className='relative group'>
               <CgProfile className='w-9 h-8 cursor-pointer' />
               {/* Profile Card shows on hover */}
-              <div className="absolute hidden group-hover:block mt-2 right-0 z-50"> 
+              <div className="absolute hidden group-hover:block  right-0 z-50"> 
                 {/* z-50 ensures the profile card appears above other elements */}
                 <div className="relative z-50">
                   <DashPrfofileCard />
@@ -73,7 +73,7 @@ const Navbar: React.FC<NavbarProps> = () => {
         alt="navCert"
         height="80"
         width="65"
-        className="absolute right-0 top-1/2 transform -translate-y-1/2 hidden lg:block z-30" // Position at the end of the navbar, centered vertically
+        className="absolute right-0 top-1/2 transform -translate-y-1/2 hidden lg:block z-30 lg:right-10" // Position at the end of the navbar, centered vertically
       />
     </div>
   );
