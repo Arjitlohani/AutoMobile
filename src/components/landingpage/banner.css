@@ -13,20 +13,19 @@
 }
 .image{
     position: absolute;
-    width: 100%;
+    height: 100%;
     left: 0;right: 0;top: 0; bottom: 0;
     color: transparent;  
     object-fit: cover;
-    z-index: -1; 
+    z-index: -10; 
 }  
  .container-a{
     margin: 0 auto;
-    position: absolute;
-    top: 0;
-    left: 0;
+    /* top: 0; 
+    left: 0;  */
     width: 100%;
     right: 0;
-    height: 500px;
+    /* height: 440px;  */
 }
 
 .container-aa{
@@ -38,7 +37,7 @@
 }
 
 .container-aaa{
-     grid-column: 1/7;
+    grid-column: 1/7;
    height: 100%;
    color: white; 
     margin-right: 7px;  
@@ -63,11 +62,89 @@
 .container-aab{
     grid-column: 8/12;
 }
-/* 
+
 
 .container2 {
-    height: 5rem;
+    height: 100px;
+    width: 100%;
+    display: relative;
 
+}
+.container2a{
+
+    height: 40px;
+    background-color: #fff;
+    display: absolute;
+  padding-left: 16px 0;
+}
+
+/* body{
+    height: 100vh;
 } */
+.parent{
+    /* height: 10vh; */
+    /* width: 100%;
+    background-color: rgb(251, 250, 248);
+    padding-top: 1px; */
+    /* padding: 10px; */
+}
+.child{
+    /* height: 10vh; */
+    /* width: 70%;
+    padding-top: 2px;
+    padding-bottom:8px ;
+    margin: 0 auto; */
+ 
+    
+}
+.children{
+    /* background-color: beige; */
+    /* height: 10vh; */
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 36px;
+    align-items: center;
+   
+}
+.child1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0 8px;
+    align-items: start;
+   
+}
+.child1  .child1-para1 img{
+    height: 93px;
+    width: 90px;
+    z-index: 10;
+    color: transparent;
+    object-fit: cover;
+   
+}
+.child1-para{
+    position: absolute;
+    top: 10px; left: 2px;bottom: 0; right: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+   
+   
+}
+
+.para{
+    /* text-align: center; */
+    
+    font-weight: bold;
+    align-items: center;
+}
+.para-small{
+    text-align: center;
+
+}
 
 

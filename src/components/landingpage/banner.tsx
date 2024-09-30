@@ -13,7 +13,7 @@ const Banner = () => {
           height={10000}
         />
         <div className="container-a  mx-auto w-fit ">
-          <div className="container-aa py-4 md:grid-cols-1">
+          <div className="container-aa py-4 md:flex md:flex-1  ">
             <div className="container-aaa mr-7 relative md:ps-20 lg:px-2 xl:px-2">
               <div className="mr-9 absolute top-1 right-0">
                 <h1 className="m-0 ">Your dream vehilce</h1>
@@ -26,24 +26,20 @@ const Banner = () => {
               error, corrupti eaque amet fugiat blanditiis modi voluptatum.
               himal Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Qui a officiis aliquid assumenda ullam dolorem nemo illo aut quasi
-              error, corrupti eaque amet fugiat blanditiis modi voluptatum.himal Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Qui a officiis aliquid assumenda ullam dolorem nemo illo aut quasi
-              error, corrupti eaque amet fugiat blanditiis modi voluptatum.himal Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              error, corrupti eaque amet fugiat blanditiis modi volu himal Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Qui a officiis aliquid assumenda ullam dolorem nemo illo aut quasi
               error, corrupti eaque amet fugiat blanditiis modi voluptatum.
-
-
               himal Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Qui a officiis aliquid assumenda ullam dolorem nemo illo aut quasi
               error, corrupti eaque amet fugiat blanditiis modi voluptatum.himal Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Qui a officiis aliquid assumenda ullam dolorem nemo illo aut quasi
               error, corrupti eaque amet fugiat blanditiis modi voluptatum.himal Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Qui a officiis aliquid assumenda ullam dolorem nemo illo aut quasi
-              error, corrupti eaque amet fugiat blanditiis modi voluptatum.himal Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Qui a officiis aliquid assumenda ullam dolorem nemo illo aut quasiptatum.himal Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Qui a officiis aliquid assumenda ullam dolorem nemo illo aut quasi
               error, corrupti eaque amet fugiat blanditiis modi voluptatum.himal Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Qui a officiis aliquid assumenda ullam dolorem nemo illo aut quasi
               error, corrupti eaque amet fugiat blanditiis modi voluptatum.
+ eaque amet fugiat blanditiis modi voluptatum.
             </div>
           </div>
         </div>
@@ -90,3 +86,5 @@ const Banner = () => {
 };
 
 export default Banner;
+
+
