@@ -2,6 +2,7 @@
 
 import { Banner } from "@/components";
 import DashboardNav from "@/components/utils/DashboardNav";
+import Footer from "@/components/utils/Footer";
 
 
 import Navbar from "@/components/utils/Navbar";
@@ -22,9 +23,11 @@ export default function Home() {
       <Navbar handelProfileCard={handelProfileCard} isOpenProfileCard={isOpenProfileCard} />
       <DashboardNav />
       
-      <div className="flex flex-auto"> 
+       
         <Banner />
-      </div>
+      
+
+      <Footer/>
 
       
      

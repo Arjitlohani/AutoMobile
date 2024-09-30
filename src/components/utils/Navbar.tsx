@@ -48,7 +48,7 @@ const Navbar: React.FC<NavbarProps> = () => {
           </button>
 
           <ul className='flex gap-4 items-center'>
-            <li id='whatsapp'><SocialIcon className='w-4 h-4' network="whatsapp" /></li>
+            <li id='whatsapp'><SocialIcon style={{height:"30px", width:"50px"}} className='w-4 h-4' network="whatsapp" /></li>
             <li><IoCartOutline className='w-9 h-8' /></li>
             <li><FaHeadset className='w-9 h-8' /></li>
 
@@ -69,7 +69,7 @@ const Navbar: React.FC<NavbarProps> = () => {
 
       {/* Add the overlapping navCert image */}
       <Image
-        src='/images/navCert.png'
+        src='/images/navbann.webp'
         alt="navCert"
         height="80"
         width="65"
