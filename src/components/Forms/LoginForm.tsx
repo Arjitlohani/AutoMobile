@@ -1,14 +1,10 @@
 // src/components/Forms/LoginForm.tsx
 'use client'
 import React from "react";
-import {FieldValues, useForm} from 'react-hook-form'
-
+import { FieldValues, useForm } from 'react-hook-form';
 import Navbar from "../utils/Navbar";
-
-// type Inputs = {
-//   example: string;
-//   exampleRequired: string;
-// };
+import Link from "next/link";
+import Footer from "../utils/Footer";
 
 const LoginForm: React.FC = () => {
   const {
@@ -17,14 +13,14 @@ const LoginForm: React.FC = () => {
     watch,
     formState: { errors },
   } = useForm({
-    defaultValues:{
-        example: "",
-        exampleRequired: ""
+    defaultValues: {
+        Username: "",
+        Password: ""
     }
   });
 
-  const onSubmit = (data : FieldValues) => {
-    console.log(data,"data");
+  const onSubmit = (data: FieldValues) => {
+    console.log(data, "data");
   };
 
   const handleProfileCard = () => {
@@ -33,23 +29,53 @@ const LoginForm: React.FC = () => {
 
   const isOpenProfileCard = false;
 
-  console.log(watch("example")); // watch input value by passing the name of it
+  console.log(watch("Username")); // Watch input value by passing the name of it
 
   return (
     <>
       <Navbar handelProfileCard={handleProfileCard} isOpenProfileCard={isOpenProfileCard} />
-      {/* "handleSubmit" will validate your inputs before invoking "onSubmit" */}
-      <form onSubmit={handleSubmit(onSubmit)}>
-        {/* Register your input into the hook by invoking the "register" function */}
-        <input defaultValue="test" {...register("example")} />
+      <div className="flex items-center justify-center h-screen">
+        {/* Pop-up card */}
+        <form onSubmit={handleSubmit(onSubmit)} className="bg-white rounded-lg shadow-lg p-6 w-full max-w-md">
+          <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
 
-        {/* Include validation with required or other standard HTML validation rules */}
-        <input {...register("exampleRequired", { required: true })} />
-        {/* Errors will return when field validation fails */}
-        {errors.exampleRequired && <span>This field is required</span>}
+          {/* Username */}
+          <div className="flex flex-col mb-4">
+            <label className="mb-2">Username</label>
+            <input
+              className="bg-slate-200 p-2 rounded-md"
+              placeholder="username"
+              {...register("Username")}
+            />
+          </div>
 
-        <input type="submit" />
-      </form>
+          {/* Password */}
+          <div className="flex flex-col mb-4">
+            <label className="mb-2">Password</label>
+            <input
+              className="bg-slate-200 p-2 rounded-md"
+              placeholder="Password"
+              {...register("Password", { required: true })}
+            />
+            {errors.Password && (
+              <span className="text-red-500">This field is required</span>
+            )}
+          </div>
+
+          {/* Submit Button */}
+          <button className="bg-blue-500 text-white px-4 py-2 rounded-md w-full hover:bg-blue-700" type="submit">
+            Submit
+          </button>
+          <div className='mt-5 flex justify-between text-left'>
+        <Link href="Signup/signup-individual" className='text-blue-500'>Create an individual account</Link>
+
+        <Link href="Signup/signup-dealer" className='text-blue-500'>Create an Dealer account</Link>
+
+      </div>
+        </form>
+        
+      </div>
+      <Footer/>
     </>
   );
 };
