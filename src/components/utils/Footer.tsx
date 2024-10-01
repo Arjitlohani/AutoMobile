@@ -1,7 +1,8 @@
-import React from 'react';
+'use client'
+import React, { useState } from 'react';
 
 const Footer = () => {
-  const [isReadMore, setIsReadMore] = React.useState(false);
+  const [isReadMore, setIsReadMore] = useState(false);
 
   const handleClick=()=>{
     setIsReadMore(!isReadMore);
