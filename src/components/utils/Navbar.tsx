@@ -1,13 +1,17 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
-import { CgProfile } from 'react-icons/cg'
-import { CiLocationOn } from 'react-icons/ci'
-import { FaHeadset, FaSearch } from 'react-icons/fa'
-import { IoCartOutline } from 'react-icons/io5'
-import { SocialIcon } from 'react-social-icons'
+import Image from 'next/image';
+import Link from 'next/link';
 
-const Navbar = () => {
+import { CiLocationOn } from 'react-icons/ci';
+import { FaHeadset, FaSearch } from 'react-icons/fa';
+import { IoCartOutline } from 'react-icons/io5';
+import { SocialIcon } from 'react-social-icons';
+
+import NavbarProps  from '@/Context/NavbarProps';
+
+// Define the props interface
+
+
+const Navbar: React.FC<NavbarProps> = () => {
   return (
     <div>
       <header className='bg-white shadow-md sticky '>
@@ -42,15 +46,22 @@ const Navbar = () => {
             <CiLocationOn className='mr-2' /> Location {/* Adjusted for inline icon */}
           </button>
 
-          <ul className='flex gap-4'>
-    <li id='whatsapp'><SocialIcon className='w-4 h-4' network="whatsapp" /></li>
-    <li><IoCartOutline className='w-9 h-8' /></li>
-    <li><FaHeadset className='w-9 h-8' /></li>
-    <li><CgProfile className='w-9 h-8' /></li>
-</ul>
-
+          <ul className='flex gap-4 items-center'>
+            <li id='whatsapp'><SocialIcon style={{height:"40px", width:"80%"}} className='mt-1' network="whatsapp" /></li>
+            <li><IoCartOutline className='w-8 h-7' /></li>
+            <li><FaHeadset className='w-8 h-7' /></li>
+          </ul>
         </div>
       </header>
+
+      {/* Add the overlapping navCert image */}
+      <Image
+        src='/images/navbann.webp'
+        alt="navCert"
+        height="80"
+        width="65"
+        className="absolute right-0 top-1/2 transform -translate-y-1/2 hidden lg:block z-30 lg:right-10" // Position at the end of the navbar, centered vertically
+      />
     </div>
   )
 }
