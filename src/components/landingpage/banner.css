@@ -8,7 +8,7 @@
 .container{
     min-width: 1280px;
     max-width: 4000rem;
-    width: 100%;
+    /* width: 100%; */
    
 }
 .image{
@@ -24,16 +24,15 @@
     /* top: 0; 
     left: 0;  */
     width: 100%;
-    right: 0;
+    /* right: 0; */
     /* height: 440px;  */
 }
-
 .container-aa{
     display: grid;
     gap: 4px;
     padding:4px 0 ;
-    grid-template-columns: repeat(12,1fr);
-    height: 110%;
+    /* grid-template-columns: repeat(12,1fr); */
+    height: 100%;
 }
 
 .container-aaa{
@@ -60,7 +59,7 @@
 }
 
 .container-aab{
-    grid-column: 8/12;
+        
 }
 
 
@@ -147,4 +146,59 @@
 
 }
 
+.custom-border-center{
+    position: relative;
+}
+.custom-border-center::after{
+background: linear-gradient(90deg,#72d671 35%,#3ba5e0);
+/* background-color: red; */
+border-radius: 5px;
+bottom: 0;
+content: "";
+height: 5px;
+left: 50%;
+position: absolute;
+transform: translate(-50%);
+width: 20%;
+}
+.vechile-img{
+    height: 79px;
+    width: 93px;
+}
 
+.obtv-obt-ticker{
+    color: #333;
+    height: 200px;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    text-align: center;
+}
+.obvt-title-container{
+    display: flex;
+    align-items: center;
+   margin:  10px;
+    gap: 10px;
+    padding: 0 22px;
+}
+.obvt-title-container>h4{
+    margin: 0 12px;
+}
+.obvt-parent-wrapper{
+    background-color: #c7d5c7;
+    /* height: 100px; */
+    display: flex;
+    gap: 12px;
+    margin: 0 18px;
+    border-radius: 14px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .16);;
+    
+}
+.obvt-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    border-radius: 12px;
+    gap:0px;
+    padding: 12px;
+}

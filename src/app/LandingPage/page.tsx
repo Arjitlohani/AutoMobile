@@ -1,4 +1,5 @@
-import { Banner } from "@/components"
+import { Banner } from "@/components"  
+// import Test from "@/components/landingpage/Test"
 import Navbar from "@/components/utils/Navbar"
 
 const LandingPage = () => {
@@ -9,6 +10,7 @@ const LandingPage = () => {
       <div className="pb-6">
          
       <Banner/>
+      {/* <Test/> */}
       </div>
     </div>
     </>
