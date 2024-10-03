@@ -17,7 +17,7 @@ const Page = () => {
       <Navbar handelProfileCard={handleProfileCard} isOpenProfileCard={isOpenProfileCard} />
 
       {/* Background Image Wrapper */}
-      <div className="relative w-full h-[550px]"> {/* Adjust the height as needed */}
+      <div className="relative w-full h-[570px]"> {/* Adjust the height as needed */}
         <Image
           src="/images/ind-banner.jpg"
           alt="Banner Image"
@@ -45,7 +45,9 @@ const Page = () => {
         </div>
       </div>
       <Footer/>
+      
     </div>
+    
   );
 };
 

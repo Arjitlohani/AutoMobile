@@ -84,10 +84,10 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div>
-            <h3 className='mt-4'><strong>About Dhroom</strong></h3>
+          <div className='grid grid-cols-1'>
+            <h3 className='mt-4 text-lg md:text-xl'><strong>About Dhroom</strong></h3>
             {isReadMore ? (
-  <div>
+  <div className='text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px]  space-y-2 '>
     <p className="mb-4">
       Droom is a tech and AI-driven 21st-century futuristic online platform revolutionizing the Indian automotive market. Droom is the only online automobile platform in India that sells both used and new 
       automobiles and everything from bicycles to planes. Droom has helped 2.5 million+ customers buy,
@@ -114,7 +114,7 @@ const Footer = () => {
       finance, or any other business opportunities by claiming that they are contacting you on our (Droom’s) behalf. The contacting individual or organization may, for example, invite you to participate in an investment opportunity. Such fraudulent offers and claims are usually received via Telegram, WhatsApp, email, text message, etc. Please note that Droom does not have any policy to ask for any investment or provide money into your accounts for any sweepstakes, contests, reviews, schemes, or lotteries. Someone/some individuals are impersonating representatives of Droom and asking for advance money and may even send some money into your account for sweepstakes or contests lotteries or deals. These claims and offers are fraudulent and invalid, and you are strongly advised to exercise great caution and disregard such offers and invitations. Please note that under no circumstances shall, Droom Technology Private Limited and/or its affiliates and subsidiaries, Founder/CEO, directors, or employees be held liable or responsible for any claims, losses, damages, expenses, or other inconvenience resulting from or in any way connected to the actions of these imposters. Please be alert and do not fall for such traps.
     </p>
 
-    <button className="text-blue-500" onClick={handleClick}><u>Read less...</u></button>
+    <button className="text-blue-500" onClick={handleClick}>Read less</button>
   </div>
 ) : (
   <div>
@@ -133,7 +133,7 @@ const Footer = () => {
       and ownership transfer. For individual sellers, Droom offers QuickSell, a highly innovative, transparent, and convenient solution to sell or exchange pre-owned vehicles at lightning-fast speed and fair price via our vast network of 23k+ dealers in 1,174 cities.
     </p>
 
-    <button className="text-blue-500" onClick={handleClick}><u>Read more...</u></button>
+    <button className="text-blue-500" onClick={handleClick}>Read more</button>
   </div>
 )}
 

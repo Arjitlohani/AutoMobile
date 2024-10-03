@@ -4,7 +4,7 @@ import React from "react";
 import { FieldValues, useForm } from 'react-hook-form';
 import Navbar from "../utils/Navbar";
 import Link from "next/link";
-import Footer from "../utils/Footer";
+
 
 const LoginForm: React.FC = () => {
   const {
@@ -75,7 +75,7 @@ const LoginForm: React.FC = () => {
         </form>
         
       </div>
-      <Footer/>
+      
     </>
   );
 };
