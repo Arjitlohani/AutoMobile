@@ -1,38 +1,34 @@
-'use client';
+'use client'
 
+// import Test from "@/components/landingpage/test";
 import { Banner } from "@/components";
 import DashboardNav from "@/components/utils/DashboardNav";
 import Footer from "@/components/utils/Footer";
-
-
 import Navbar from "@/components/utils/Navbar";
-import { useState } from "react";
+
+
+
+
+
 
 export default function Home() {
-  const [isOpenProfileCard, setIsOpenProfileCard] = useState(false);
+  const handleProfileCard = () => {
+    console.log("Profile card handled");
+  };
 
-  const handelProfileCard = () => {
-    setIsOpenProfileCard(!isOpenProfileCard);
-  }
-
+  const isOpenProfileCard = false;
+  
   return (
-    <div className="flex flex-col min-h-screen">  {/* Full-height flex container */}
+    <>
+    
     <div>
-      
-    </div>
-      <Navbar handelProfileCard={handelProfileCard} isOpenProfileCard={isOpenProfileCard} />
-      <DashboardNav />
-      
-       
-        <Banner />
-      
-
+      <Navbar handelProfileCard={handleProfileCard} isOpenProfileCard={isOpenProfileCard} />
+      <DashboardNav/>
+      <Banner/>
+      {/* <Test/> */}
       <Footer/>
-
-      
-     
-      
-     
+    
     </div>
+    </>
   );
 }

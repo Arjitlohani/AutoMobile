@@ -35,5 +35,29 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-
 test
+
+<div
+                                onClick={() => handleClick("car")}
+                                className={`vechile-img rounded border ${
+                                  selectedVehicle === "car"
+                                    ? "bg-gradient-to-r from-[#3ba5e0] to-[#34d1c4] shadow-lg"
+                                    : "bg-[#f1f1f1] "
+                                } flex cursor-pointer flex-col items-center justify-center py-4 capitalize `}
+                                style={{
+                                  filter:
+                                    selectedVehicle === "car"
+                                      ? "drop-shadow(0 0 10px #3ba5e0)"
+                                      : "none",
+                                }}
+                              >
+                                <div className="">
+                                  <img
+                                    src="/images/car.svg"
+                                    alt="bike"
+                                    width="53"
+                                    height="24"
+                                  />
+                                </div>
+                                <div className="text-center">Car</div>
+                              </div>

@@ -6,12 +6,10 @@ import { FaHeadset, FaSearch } from 'react-icons/fa';
 import { IoCartOutline } from 'react-icons/io5';
 import { SocialIcon } from 'react-social-icons';
 import DashPrfofileCard from './DashPrfofileCard';
+import NavbarProps  from '@/Context/NavbarProps';
 
 // Define the props interface
-interface NavbarProps {
-  handelProfileCard: () => void;  // Function type for toggling profile card
-  isOpenProfileCard: boolean;     // Boolean type for showing profile card
-}
+
 
 const Navbar: React.FC<NavbarProps> = () => {
   return (
@@ -48,9 +46,9 @@ const Navbar: React.FC<NavbarProps> = () => {
           </button>
 
           <ul className='flex gap-4 items-center'>
-            <li id='whatsapp'><SocialIcon style={{height:"30px", width:"50px"}} className='w-4 h-4' network="whatsapp" /></li>
-            <li><IoCartOutline className='w-9 h-8' /></li>
-            <li><FaHeadset className='w-9 h-8' /></li>
+            <li id='whatsapp'><SocialIcon style={{height:"40px", width:"80%"}} className='mt-1' network="whatsapp" /></li>
+            <li><IoCartOutline className='w-8 h-7' /></li>
+            <li><FaHeadset className='w-8 h-7' /></li>
 
             {/* Profile Icon with Hover-triggered Profile Card */}
             <li className='relative group'>

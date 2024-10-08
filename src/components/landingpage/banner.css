@@ -8,37 +8,35 @@
 .container{
     min-width: 1280px;
     max-width: 4000rem;
-    width: 100%;
+    /* width: 100%; */
    
 }
 .image{
     position: absolute;
-    width: 100%;
+    height: 100%;
     left: 0;right: 0;top: 0; bottom: 0;
     color: transparent;  
     object-fit: cover;
-    z-index: -1; 
+    z-index: -10; 
 }  
  .container-a{
     margin: 0 auto;
-    position: absolute;
-    top: 0;
-    left: 0;
+    /* top: 0; 
+    left: 0;  */
     width: 100%;
-    right: 0;
-    height: 500px;
+    /* right: 0; */
+    /* height: 440px;  */
 }
-
 .container-aa{
     display: grid;
     gap: 4px;
     padding:4px 0 ;
     grid-template-columns: repeat(12,1fr);
-    height: 110%;
+    height: 100%;
 }
 
 .container-aaa{
-     grid-column: 1/7;
+    grid-column: 1/7;
    height: 100%;
    color: white; 
     margin-right: 7px;  
@@ -61,13 +59,146 @@
 }
 
 .container-aab{
-    grid-column: 8/12;
+        
 }
-/* 
+
 
 .container2 {
-    height: 5rem;
+    height: 100px;
+    width: 100%;
+    display: relative;
 
+}
+.container2a{
+
+    height: 40px;
+    background-color: #fff;
+    display: absolute;
+  padding-left: 16px 0;
+}
+
+/* body{
+    height: 100vh;
 } */
+.parent{
+    /* height: 10vh; */
+    /* width: 100%;
+    background-color: rgb(251, 250, 248);
+    padding-top: 1px; */
+    /* padding: 10px; */
+}
+.child{
+    /* height: 10vh; */
+    /* width: 70%;
+    padding-top: 2px;
+    padding-bottom:8px ;
+    margin: 0 auto; */
+ 
+    
+}
+.children{
+    /* background-color: beige; */
+    /* height: 10vh; */
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 36px;
+    align-items: center;
+   
+}
+.child1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0 8px;
+    align-items: start;
+   
+}
+.child1  .child1-para1 img{
+    height: 93px;
+    width: 90px;
+    z-index: 10;
+    color: transparent;
+    object-fit: cover;
+   
+}
+.child1-para{
+    position: absolute;
+    top: 10px; left: 2px;bottom: 0; right: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+   
+   
+}
 
+.para{
+    /* text-align: center; */
+    
+    font-weight: bold;
+    align-items: center;
+}
+.para-small{
+    text-align: center;
 
+}
+
+.custom-border-center{
+    position: relative;
+}
+.custom-border-center::after{
+background: linear-gradient(90deg,#72d671 35%,#3ba5e0);
+/* background-color: red; */
+border-radius: 5px;
+bottom: 0;
+content: "";
+height: 5px;
+left: 50%;
+position: absolute;
+transform: translate(-50%);
+width: 20%;
+}
+.vechile-img{
+    height: 79px;
+    width: 93px;
+}
+
+.obtv-obt-ticker{
+    color: #333;
+    height: 200px;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    text-align: center;
+}
+.obvt-title-container{
+    display: flex;
+    align-items: center;
+   margin:  10px;
+    gap: 10px;
+    padding: 0 22px;
+}
+.obvt-title-container>h4{
+    margin: 0 12px;
+}
+.obvt-parent-wrapper{
+    background-color: #c7d5c7;
+    /* height: 100px; */
+    display: flex;
+    gap: 12px;
+    margin: 0 18px;
+    border-radius: 14px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .16);;
+    
+}
+.obvt-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    border-radius: 12px;
+    gap:0px;
+    padding: 12px;
+}
