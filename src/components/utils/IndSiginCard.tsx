@@ -21,7 +21,7 @@ const IndSiginCard = () => {
 </div>
 
             {/* Pop-up card */}
-            <form className="bg-white  shadow-lg p-6 w-full max-w-md">
+            <form className="bg-white  shadow-lg p-6 w-full max-w-md rounded">
             <h2 className="text-2xl font-bold mb-6 text-center">Create Your Individual Account</h2>
             <div className="flex mb-4 space-x-4">
   {/* Email */}

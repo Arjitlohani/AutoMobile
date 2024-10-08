@@ -14,10 +14,11 @@ const Page = () => {
   return (
     <div>
       {/* Navbar */}
-      <Navbar handelProfileCard={handleProfileCard} isOpenProfileCard={isOpenProfileCard} />
-
+      <div className="fixed top-0 left-0 right-0 z-50 bg-white shadow-lg p-1">
+      <Navbar handelProfileCard={handleProfileCard} isOpenProfileCard={isOpenProfileCard}  />
+      </div>
       {/* Background Image Wrapper */}
-      <div className="relative w-full h-[570px]"> {/* Adjust the height as needed */}
+      <div className="absolute w-full h-[700px] " > {/* Adjust the height as needed */}
         <Image
           src="/images/ind-banner.jpg"
           alt="Banner Image"
@@ -27,9 +28,9 @@ const Page = () => {
         />
 
         {/* Content on top of the background */}
-        <div className="absolute inset-0 flex justify-between items-center px-10 z-10">
+        <div className="relative  inset-0 flex justify-between items-center px-10 z-10">
           {/* Left Column: Text and Icons */}
-          <div className="w-1/2 text-white space-y-6">
+          <div className=" text-white space-y-6">
             <h1 className="text-4xl font-bold">Why Droom for Individuals</h1>
             <p className="text-xl">Get updates on WhatsApp</p>
             <div className="flex items-center space-x-4">
@@ -39,7 +40,7 @@ const Page = () => {
           </div>
 
           {/* Right Column: IndSiginCard */}
-          <div className="w-1/2 flex justify-center">
+          <div className=" flex justify-center mt-[120px]">
             <IndSiginCard />
           </div>
         </div>

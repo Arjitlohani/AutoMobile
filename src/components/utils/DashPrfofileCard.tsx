@@ -19,9 +19,9 @@ const DashPrfofileCard: React.FC = () => {
         
       </Link>
       <div className='mt-5 flex justify-between text-left p-2'>
-        <Link href="Signup/signup-individual" className='text-blue-500'>Create an individual account</Link>
+        <Link href="/Signup/signup-individual" className='text-blue-500'>Create an individual account</Link>
 
-        <Link href="Signup/signup-dealer" className='text-blue-500'>Create an Dealer account</Link>
+        <Link href="/Signup/signup-dealer" className='text-blue-500'>Create an Dealer account</Link>
 
       </div>
     </div>

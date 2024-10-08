@@ -22,7 +22,7 @@ const SignupDealer: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full h-[570px]">
+    <div className="relative w-full h-[570px] z-10">
       <div className="absolute inset-0 flex justify-between items-center px-10 z-10"> {/* z-10 for signup dealer */}
         <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
           <h2 className="text-xl font-semibold text-center mb-4">Create Your Dealer Account</h2>

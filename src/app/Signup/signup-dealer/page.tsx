@@ -13,8 +13,10 @@ const page = () => {
   return (
     <>
     <div>
-        <Navbar handelProfileCard={handleProfileCard} isOpenProfileCard={isOpenProfileCard}/>
-        <div className="relative w-full h-[570px]"> {/* Adjust the height as needed */}
+    <div className="fixed top-0 left-0 right-0  z-50 bg-white shadow-lg p-1">
+      <Navbar handelProfileCard={handleProfileCard} isOpenProfileCard={isOpenProfileCard}  />
+      </div>
+        <div className="relative w-full h-[570px] mt-[60px]"> {/* Adjust the height as needed */}
         <Image
           src="/images/ind-banner.jpg"
           alt="Banner Image"
@@ -30,7 +32,7 @@ const page = () => {
         </h1>
            
             </div>
-            <div className='w-2/5 flex justify-center'>
+            <div className='w-2/5 inset-0 flex justify-center z-10'>
             <SignupDealer/>
             </div>
 
