@@ -46,10 +46,14 @@ const Navbar: React.FC<NavbarProps> = () => {
           </button>
 
           <ul className='flex gap-4 items-center'>
-            <li id='whatsapp'><SocialIcon style={{height:"40px", width:"80%"}} className='mt-1' network="whatsapp" /></li>
+            <li id='whatsapp' >
+            <SocialIcon id='whatsappicon' style={{height:"35px" , width:"35px"}}  className='mt-1 hover:scale-125 ' network="whatsapp" /> 
+
+         </li>
+            
             <li><IoCartOutline className='w-8 h-7' /></li>
             <li><FaHeadset className='w-8 h-7' /></li>
-
+    
             {/* Profile Icon with Hover-triggered Profile Card */}
             <li className='relative group'>
               <CgProfile className='w-9 h-8 cursor-pointer' />
