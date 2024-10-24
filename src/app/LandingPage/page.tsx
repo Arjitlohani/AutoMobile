@@ -3,9 +3,14 @@ import { Banner } from "@/components"
 import Navbar from "@/components/utils/Navbar"
 
 const LandingPage = () => {
+  const handleProfileCard = () => {
+    console.log("Profile card handled");
+  };
+
+  const isOpenProfileCard = false;
   return (
     <>
-    <Navbar/>
+    <Navbar handelProfileCard={handleProfileCard} isOpenProfileCard={isOpenProfileCard} />
     <div className="overflow-hidden pb-6">
       <div className="pb-6">
          

@@ -10,6 +10,15 @@ const Footer = () => {
   return (
     <div>
       <footer className="bg-gray-200 text-gray-700 py-10">
+        <div className='flex'>
+          <div className='flex-1'>
+            
+          </div>
+          <div className='flex-2'></div>
+          <div className='flex-3'></div>
+          <div className='flex-4'></div>
+
+        </div>
         <div className="container mx-auto px-4">
           {/* Responsive Grid Layout */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">

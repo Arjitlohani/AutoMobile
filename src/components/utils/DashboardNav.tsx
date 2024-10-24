@@ -1,7 +1,10 @@
 import Image from 'next/image';
+import Link from 'next/link';
+
 import React from 'react';
 import { BiSolidCategory } from 'react-icons/bi';
 import { FaApple} from 'react-icons/fa';
+
 import { SocialIcon } from 'react-social-icons';
 
 const DashboardNav = () => {
@@ -13,7 +16,7 @@ const DashboardNav = () => {
      
         <button id='DashboardNav' className='text-xs sm:text-sm'>Buy Used</button>
         <button id='DashboardNav' className='text-xs sm:text-sm'>Buy New</button>
-        <button id='DashboardNav' className='text-xs sm:text-sm'>Get Loan</button>
+        <Link href="/loan"><button id='DashboardNav' className='text-xs sm:text-sm'>Get Loan</button></Link>
         <button id='DashboardNav' className='text-xs sm:text-sm'>Get/Renew Insurance</button>
         <button id='DashboardNav' className='text-xs sm:text-sm'>Get Reports</button>
         
