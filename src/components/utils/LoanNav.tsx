@@ -6,7 +6,7 @@ import { SocialIcon } from "react-social-icons"
 
 const LoanNav = () => {
   return (
-    <div className='flex flex-col sm:flex-row gap-4 justify-center items-center h-16 p-4'>
+    <div className='flex flex-col sm:flex-row gap-4 justify-center items-center h-16 p-4 bg-white shadow-md'>
        <button  className='text-xs sm:text-sm  mr-5 flex justify-center ' ><BiSolidCategory />Category</button>
        {/* Adjusted text size */}
       <nav className='flex flex-row flex-nowrap gap-3 o'> {/* Use flex-nowrap to prevent wrapping and overflow-x-auto for scrolling */}
