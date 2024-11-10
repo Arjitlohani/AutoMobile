@@ -1,5 +1,7 @@
 'use client'
+import Image from 'next/image';
 import React, { useState } from 'react';
+import { FaApple } from 'react-icons/fa';
 
 const Footer = () => {
   const [isReadMore, setIsReadMore] = useState(false);
@@ -9,6 +11,13 @@ const Footer = () => {
   }
   return (
     <div>
+      <div className='flex w-full bg-slate-300 '>
+        <div className='flex'>
+        <Image className=' ml-3' src='/images/playstore.webp' alt='appstore' width={10} height={3} />
+        <FaApple />
+        </div>
+
+        </div>
       <footer className="bg-gray-200 text-gray-700 py-10">
         <div className='flex'>
           <div className='flex-1'>
