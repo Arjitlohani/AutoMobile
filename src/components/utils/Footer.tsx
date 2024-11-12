@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 import { FaApple } from 'react-icons/fa';
+import { SocialIcon } from 'react-social-icons';
 
 const Footer = () => {
   const [isReadMore, setIsReadMore] = useState(false);
@@ -10,11 +11,43 @@ const Footer = () => {
     setIsReadMore(!isReadMore);
   }
   return (
-    <div>
-      <div className='flex w-full bg-slate-300 '>
-        <div className='flex'>
-        <Image className=' ml-3' src='/images/playstore.webp' alt='appstore' width={10} height={3} />
-        <FaApple />
+    <div >
+      <div className='flex w-full bg-slate-100 h-[130px] gap-7 justify-center p-5 '>
+        <div  >
+          <div className='flex gap-4'>
+          <Image className=' ml-3 hover:scale-125  ' src='/images/playstore.webp' alt='appstore' width={10} height={2} />
+          <FaApple className=' hover:scale-125' />
+          </div>
+          <h1>Download App</h1>
+        </div>
+        <div>
+        <SocialIcon id='whatsappicon' style={{height:"35px" , width:"35px"}}  className='mt-1 hover:scale-125 ' network="youtube" />
+        <h1>Watch Us</h1>
+          
+        </div>
+        <div>
+        <div className='flex gap-4'>
+        <SocialIcon id='whatsappicon' style={{height:"35px" , width:"35px"}}  className='mt-1 hover:scale-125 ' network="facebook" />
+        <SocialIcon id='whatsappicon' style={{height:"35px" , width:"35px"}}  className='mt-1 hover:scale-125 ' network="twiter" />
+        <SocialIcon id='whatsappicon' style={{height:"35px" , width:"35px"}}  className='mt-1 hover:scale-125 ' network="pinterest" />
+        <SocialIcon id='whatsappicon' style={{height:"35px" , width:"35px"}}  className='mt-1 hover:scale-125 ' network="linkedin" />
+        <SocialIcon id='whatsappicon' style={{height:"35px" , width:"35px"}}  className='mt-1 hover:scale-125 ' network="instagram" />
+          
+        </div>
+        <h1>Follow Us</h1>
+        </div>
+        <div>
+        <input type="text" placeholder="Enter Email" className='border-2 border-black rounded-2xl h-9' />
+          <h1>Submit Your Email for Latest Offers</h1>
+        </div>
+        <div className='mb-4'>
+        <Image
+        src='/images/navbann.webp'
+        alt="navCert"
+        height="80"
+        width="65"
+        
+      />
         </div>
 
         </div>
